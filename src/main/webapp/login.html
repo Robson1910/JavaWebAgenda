@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<link rel="icon" href="img/favicon.png">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style type="text/css">
+body {
+	background: #74ebd5;
+	background: -webkit-linear-gradient(to right, #74ebd5, #ACB6E5);
+	background: linear-gradient(to right, #74ebd5, #ACB6E5);
+	min-height: 100vh;
+}
+</style>
+</head>
+<body>
+	<main style=" margin:50px; padding:1%; background-color: white;">
+		<div class="row">
+			<form class="col s12 l8" action="home" name="formLogar" method="POST">
+				<div class="row">
+					<div class="input-field col s12">
+						<i class="material-icons prefix">account_circle</i> <input
+							id="icon_Login" type="text" name="login" class="validate"> <label
+							for="icon_Login">Login</label>
+					</div>
+					<div class="input-field col s12">
+						<i class="material-icons prefix">password</i> <input
+							id="icon_password" type="password" name="password" class="validate"> <label
+							for="icon_password">Password</label>
+					</div>
+				</div>
+				<input type="hidden" value="Access" name="page" autocomplete="off" readonly></input>
+			</form>
+		</div>
+		<a class="waves-effect waves-light btn" href="javascript:validar()">Next</a>
+	</main>
+	<script type="text/javascript" src="scripts/validarLogin.js"></script>
+	<script type="text/javascript"
+		src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</body>
+</html>
